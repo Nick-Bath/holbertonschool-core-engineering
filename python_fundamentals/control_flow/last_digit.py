@@ -6,8 +6,8 @@ if number < 0:
     digit = digit * -1
 
 if (digit > 0):
-    print(f"Last digit of {number} is {digit} and is greater than 5 ")
+    print(f"Last digit of {number} is {digit} and is greater than 5")
 if (digit == 0):
-    print(f"Last digit of {number} is {digit} and is 0 ")
+    print(f"Last digit of {number} is {digit} and is 0")
 if (digit < 0 and digit != 0):
     print(f"Last digit of {number} is {digit} and is less than 6 and not 0")
