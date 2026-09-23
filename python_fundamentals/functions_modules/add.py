@@ -2,6 +2,7 @@
 
 import add_0
 
-a = 1
-b = 2
-print(add_0(a, b))
+if __name__ = "__main__":
+    a = 1
+    b = 2
+    print(add_0(a, b))
