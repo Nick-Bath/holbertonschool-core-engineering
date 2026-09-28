@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 
 def print_matrix_integer(matrix=[[]]):
-    matrix_comp = [[col for col in range(3)] for row in range (3)]
-    for list in matrix_comp:
-        for num in list:
+    for row in matrix:
+        for i, num in enumerate(row):
             print("{:d}".format(num), end=" ")
         print("{}".format("\n"), end="")
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print_matrix_integer(matrix)
