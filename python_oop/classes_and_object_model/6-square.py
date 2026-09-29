@@ -19,7 +19,7 @@ class Square():
     @position.setter
     def position(self, v):
         if (type(v) is not tuple or len(v) != 2 or
-            not all(type(n) is int for n in v) or v[0] < 0 or v[1] < 0):
+        not all(type(n) is int for n in v) or v[0] < 0 or v[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = v
 
@@ -27,7 +27,11 @@ class Square():
         if self.size == 0:
             print()
         else:
+            for z in range(self.position[1]):
+                print()
             for x in range(self.size):
+                for y in range(self.position[0]):
+                    print("_", end="")
                 for x in range(self.size):
                     print("#", end="")
                 print()
