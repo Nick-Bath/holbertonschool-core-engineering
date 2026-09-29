@@ -27,11 +27,7 @@ class Square():
         if self.size == 0:
             print()
         else:
-            for z in range(self.position[1]):
-                print()
             for x in range(self.size):
-                for y in range(self.position[0]):
-                    print("_", end="")
                 for x in range(self.size):
                     print("#", end="")
                 print()
