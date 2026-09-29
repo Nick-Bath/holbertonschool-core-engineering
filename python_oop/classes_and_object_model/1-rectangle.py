@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Module: Rectangle"""
 
+
 class Rectangle:
     """Creates a Rectangle"""
     def __init__(self, width=0, height=0):
@@ -19,7 +20,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @property 
+    @property
     def height(self):
         return self.__height
 
