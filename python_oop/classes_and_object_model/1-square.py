@@ -2,7 +2,7 @@
 """Module: Square """
 
 
-class Square(size):
+class Square():
     """Creates a square"""
     def __init__(self, size):
         self.size = size
