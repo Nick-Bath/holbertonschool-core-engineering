@@ -15,6 +15,9 @@ class BaseGeometry:
         return value
 
 
+"""Module: Rectangle"""
+
+
 class Rectangle(BaseGeometry):
     """defines behaviour for a rectangle"""
     def __init__(self, width, height):
