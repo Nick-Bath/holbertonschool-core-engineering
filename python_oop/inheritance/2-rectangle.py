@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module: Geometry"""
+"""Module: BaseGeometry"""
 
 
 class BaseGeometry:
@@ -15,6 +15,9 @@ class BaseGeometry:
         return value
 
 
+"""Module: Rectangle"""
+
+
 class Rectangle(BaseGeometry):
     """defines behaviour for a rectangle"""
     def __init__(self, width, height):
@@ -25,4 +28,4 @@ class Rectangle(BaseGeometry):
         return self.__width * self.__height
 
     def __str__(self):
-        
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
