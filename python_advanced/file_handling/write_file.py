@@ -1,4 +1,4 @@
-#!/bin/usr/env python
+#!/bin/usr/env python3
 """Module: writes a string to a text file"""
 
 
