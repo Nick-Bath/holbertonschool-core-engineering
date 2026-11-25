@@ -20,7 +20,7 @@ async def handler(websocket):
     try:
         # listen for messages
         async for message in websocket:
-            await websocket.send(f'U: {message}')
+            await websocket.send(f'U:{message}')
     except websockets.exceptions.ConnectionClosed:
         # raised when client disconnects
         pass
