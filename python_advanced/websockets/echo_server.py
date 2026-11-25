@@ -11,12 +11,18 @@ from websockets.asyncio.server import serve
 async def echo(websocket):
     """waits for message to send back"""
     async for message in websocket:
-        await websocket.send(message)
+        if isinstance(message, str):
+            if len(message.strip()) == 0:
+                await websocket.send("EER:EMPTY")
+            else:
+                await websocket.send(f"OK:{message}")
+        else:
+            await websocket.send("Not a string")
 
 
 async def main():
     """opens server on port"""
-    server = await serve(echo, '127.0.0.1', 8765)
+    server = await serve(echo, 'localhost', 8765)
     await server.serve_forever()
 
 
