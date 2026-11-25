@@ -22,7 +22,7 @@ async def echo(websocket):
 
 async def main():
     """opens server on port"""
-    server = await serve(echo, 'localhost', 127.0.0.1)
+    server = await serve(echo, '127.0.0.1', 8765)
     await server.serve_forever()
 
 
