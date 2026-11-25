@@ -11,7 +11,7 @@ import asyncio
 async def hello():
     """connects to server, sends a msg and prints the response"""
     async with connect("ws://localhost:8765") as websocket:
-        websocket.send("Hello WebSocket")
+        await websocket.send("Hello WebSocket")
         message = await websocket.recv()
         print(message)
 
