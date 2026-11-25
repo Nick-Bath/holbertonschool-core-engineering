@@ -13,7 +13,7 @@ async def echo(websocket):
     async for message in websocket:
         if isinstance(message, str):
             if len(message.strip()) == 0:
-                await websocket.send("EER:EMPTY")
+                await websocket.send("ERR:EMPTY")
             else:
                 await websocket.send(f"OK:{message}")
         else:
